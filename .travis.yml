@@ -1,0 +1,8 @@
+language: java
+
+os:
+  - linux
+
+script:
+  - ./gradlew clean
+  - ./gradlew build

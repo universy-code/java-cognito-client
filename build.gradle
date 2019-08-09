@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.universy'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-cognitoidp', version: awsJavaSdkCognitoIdpVersion
+    testCompile group: 'junit', name: 'junit', version: junitVersion
+}
+
+jar {
+    from(configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }) {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+}
