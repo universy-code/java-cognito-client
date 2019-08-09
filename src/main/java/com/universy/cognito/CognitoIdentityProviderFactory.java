@@ -8,7 +8,7 @@ import com.universy.cognito.environment.CognitoEnvironment;
 
 public class CognitoIdentityProviderFactory {
 
-    public static AWSCognitoIdentityProvider createMapper() {
+    public static AWSCognitoIdentityProvider createIdentityProvider() {
         CognitoClientSupplier cognitoClientSupplier;
 
         if (isLocalStage()) {
