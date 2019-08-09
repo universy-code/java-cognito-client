@@ -1,11 +1,11 @@
 # Universy Cognito Client
-[![Build Status](https://travis-ci.com/universy-code/java-dynamo-client.svg?branch=master)](https://travis-ci.com/universy-code/java-dynamo-client)
+[![Build Status](https://travis-ci.com/universy-code/java-cognito-client.svg?branch=master)](https://travis-ci.com/universy-code/java-cognito-client)
 
-## Proyecto de clases para el manejo de Cognito.
+## Useful classes to manage Cognito.
 
-### Para compilar. 
+### To compile. 
 
-Ejecute:
+Run in console:
 
 `./gradlew clean build`
  
